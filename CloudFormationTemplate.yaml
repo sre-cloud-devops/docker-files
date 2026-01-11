@@ -1,0 +1,10 @@
+#Using CFT we can drift detect the changes made in the aws console
+AWSTemplateFormatVersion: 2010-09-09
+Resources:
+  S3Bucket:
+    Type: AWS::S3::Bucket
+    DeletionPolicy: Retain
+    Properties:
+      BucketName: cft-ameer-cloud-and-devops
+      VersioningConfiguration:
+        Status: Enabled
