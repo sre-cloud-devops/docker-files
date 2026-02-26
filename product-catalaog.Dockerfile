@@ -1,4 +1,4 @@
-FROM golang:1.25 as builder
+FROM golang:1.25-alphine as builder
 WORKDIR  /usr/src/app
 COPY . .
 RUN go mod download
